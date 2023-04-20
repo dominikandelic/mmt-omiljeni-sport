@@ -1,0 +1,10 @@
+/assets/images/college-1400x2100.jpg filter=lfs diff=lfs merge=lfs -text
+/assets/images/college-500x750.jpg filter=lfs diff=lfs merge=lfs -text
+/assets/images/dunkin-500x750.bmp filter=lfs diff=lfs merge=lfs -text
+/assets/images/dunkin-5461x8192.bmp filter=lfs diff=lfs merge=lfs -text
+/assets/images/hoop-6000x4000.gif filter=lfs diff=lfs merge=lfs -text
+/assets/images/net-1500x2100.jpg filter=lfs diff=lfs merge=lfs -text
+/assets/images/spartans-4288x2848.png filter=lfs diff=lfs merge=lfs -text
+/assets/images/spartans-500x332.png filter=lfs diff=lfs merge=lfs -text
+/assets/videos/basketball-court.mp4 filter=lfs diff=lfs merge=lfs -text
+/assets/videos/output.mp4 filter=lfs diff=lfs merge=lfs -text
