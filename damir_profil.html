@@ -11,6 +11,10 @@
       crossorigin="anonymous"
     />
     <style>
+      video {
+        width: 100%;
+        height: auto;
+      }
       body {
         background: #667db6; /* fallback for old browsers */
         background: -webkit-linear-gradient(
@@ -119,18 +123,21 @@
           <h3 class="mt-3"><a class="link" href="#podaci">Damir Alić</a></h3>
         </div>
         <div class="col">
-          <video
-            width="640"
-            height="480"
-            autoplay
-            muted
-            loop
-            controls
-            id="bgvideo"
-          >
-            <source src="/assets/videos/football.mp4" type="video/mp4" />
-            Your browser does not support HTML5 video.
-          </video>
+          <div class="embed-responsive embed-responsive-16by9">
+            <video
+              class="embed-responsive-item"
+              width="640"
+              height="480"
+              autoplay
+              muted
+              loop
+              controls
+              id="bgvideo"
+            >
+              <source src="/assets/videos/football.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
           <h3 class="mt-3"><a class="link" href="#pravila">Nogomet</a></h3>
         </div>
       </div>
