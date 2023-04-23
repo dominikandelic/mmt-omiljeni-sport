@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Omiljeni sport - košarka</title>
+    <title>Profil - Damir</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -61,12 +61,45 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a
+                class="nav-link dropdown-toggle"
+                href="/index.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Košarka
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/index.html#galerija"
+                    >Galerija</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/index.html#pravila"
+                    >Pravila igre</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
                 class="nav-link"
-                href="damir_profil.html"
+                href="/damir_profil.html"
                 role="button"
                 aria-expanded="false"
               >
                 Damir Alić
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="/dominik_profil.html"
+                role="button"
+                aria-expanded="false"
+              >
+                Dominik Anđelić
               </a>
             </li>
           </ul>
@@ -86,21 +119,35 @@
           <h3 class="mt-3"><a class="link" href="#podaci">Damir Alić</a></h3>
         </div>
         <div class="col">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe 
-                width="480"
-                height="260" class="embed-responsive-item" src="assets/images/damir_profil/pexels-kelly-2932301-4096x2160-24fps.mp4"></iframe>
-              </div>
-            <h3 class="mt-3"><a class="link" href="#pravila">Nogomet</a></h3>
-          </div>
+          <video
+            width="640"
+            height="480"
+            autoplay
+            muted
+            loop
+            controls
+            id="bgvideo"
+          >
+            <source
+              src="/assets/images/damir_profil/pexels-kelly-2932301-4096x2160-24fps.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support HTML5 video.
+          </video>
+          <h3 class="mt-3"><a class="link" href="#pravila">Nogomet</a></h3>
+        </div>
       </div>
       <div class="row mt-4">
         <h3 id="podaci">Moji podaci:</h3>
         <ul>
           <li>
             <strong class="font-weight-bold">Mjesto rođenja: </strong>
-            <a target="_blank" class="link" href="https://www.slavonski-brod.hr/"
-              >Slavonski Brod</a>
+            <a
+              target="_blank"
+              class="link"
+              href="https://www.slavonski-brod.hr/"
+              >Slavonski Brod</a
+            >
           </li>
           <li>
             <strong class="font-weight-bold">Mjesto stanovanja: </strong>
@@ -110,23 +157,27 @@
           </li>
           <li>
             <strong class="font-weight-bold">Osnovna škola: </strong>
-            <a target="_blank" class="link" href="http://os-ikozarca-zu.skole.hr/"
+            <a
+              target="_blank"
+              class="link"
+              href="http://os-ikozarca-zu.skole.hr/"
               >Osnovna škola Ivana Kozarca Županja</a
             >
           </li>
           <li>
             <strong class="font-weight-bold">Srednja škola: </strong>
-            <a target="_blank" class="link" href="http://ss-obrtnicko-industrijska-zu.skole.hr/"
+            <a
+              target="_blank"
+              class="link"
+              href="http://ss-obrtnicko-industrijska-zu.skole.hr/"
               >Obrtničko-industrijska škola Županja</a
             >
           </li>
           <li>
             <strong class="font-weight-bold">Fakultet: </strong>
-            <a
-              target="_blank"
-              class="link"
-              href="https://www.ferit.unios.hr"
-              >Fakultet elektrotehnike, računarstva i informacijskih tehnologija Osijek</a
+            <a target="_blank" class="link" href="https://www.ferit.unios.hr"
+              >Fakultet elektrotehnike, računarstva i informacijskih tehnologija
+              Osijek</a
             >
           </li>
         </ul>
@@ -134,60 +185,65 @@
       <h2>Bavim li se ja ovim sportom ili ga samo volim?</h2>
       <div class="mt-4">
         <audio controls>
-          <source src="assets/audio/damir_nogomet_audio.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
+          <source src="assets/audio/damir_nogomet_audio.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
         </audio>
-        </div> 
+      </div>
 
-        <div class="row mt-4">
-            <h3 id="pravila">Osnovne informacije:</h3>
-            <p>
-                Nogomet je sport u kojemu se dvije momčadi od 11 igrača nadmeću na pravokutnom igralištu travnate površine. 
-                Cilj igre jest postizanje više pogodaka od protivničke momčadi bilo kojim dijelom tijela osim rukom. 
-                Vratar je jedini igrač kojemu je dozvoljeno igrati i braniti gol rukama, ali samo unutar jasno označenog pravokutnika ispred vlastitih vrata.
-            </p>
-          </div>
-        <h2 class="mt-3" id="galerija">Galerija</h2>
-        <div class="row mt-3">
-          <div class="col d-flex justify-content-center align-items-center">
-            <a target="_blank" href="assets/images/damir_profil/pexels-pixabay-2209.jpg"
-              ><img
-                class="img-thumbnail"
-                width="400"
-                height="600"
-                src="assets/images/damir_profil/pexels-pixabay-2209.jpg"
-            /></a>
-          </div>
-          <div class="col d-flex justify-content-center align-items-center">
-            <a target="_blank" href="assets/images/damir_profil/nogometgif.gif"
-              ><img
-                class="img-thumbnail"
-                width="500"
-                height="600"
-                src="assets/images/damir_profil/nogometgif.gif"
-            /></a>
-          </div>
+      <div class="row mt-4">
+        <h3 id="pravila">Osnovne informacije:</h3>
+        <p>
+          Nogomet je sport u kojemu se dvije momčadi od 11 igrača nadmeću na
+          pravokutnom igralištu travnate površine. Cilj igre jest postizanje
+          više pogodaka od protivničke momčadi bilo kojim dijelom tijela osim
+          rukom. Vratar je jedini igrač kojemu je dozvoljeno igrati i braniti
+          gol rukama, ali samo unutar jasno označenog pravokutnika ispred
+          vlastitih vrata.
+        </p>
+      </div>
+      <h2 class="mt-3" id="galerija">Galerija</h2>
+      <div class="row mt-3">
+        <div class="col d-flex justify-content-center align-items-center">
+          <a
+            target="_blank"
+            href="assets/images/damir_profil/pexels-pixabay-2209.jpg"
+            ><img
+              class="img-thumbnail"
+              width="400"
+              height="600"
+              src="assets/images/damir_profil/pexels-pixabay-2209.jpg"
+          /></a>
         </div>
-        <div class="row mt-4">
-          <div class="col d-flex justify-content-center align-items-center">
-            <a target="_blank" href="assets/images/damir_profil/nogometbmp.bmp"
-              ><img
-                class="img-thumbnail"
-                width="400"
-                height="200"
-                src="assets/images/damir_profil/nogometbmp.bmp"
-            /></a>
-          </div>
-          <div class="col d-flex justify-content-center align-items-center">
-            <a target="_blank" href="assets/images/damir_profil/nogomettif.jpg"
-              ><img
-                class="img-thumbnail"
-                width="400"
-                height="200"
-                src="assets/images/damir_profil/nogomettif.jpg"
-            /></a>
-          </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/damir_profil/nogometgif.gif"
+            ><img
+              class="img-thumbnail"
+              width="500"
+              height="600"
+              src="assets/images/damir_profil/nogometgif.gif"
+          /></a>
         </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/damir_profil/nogometbmp.bmp"
+            ><img
+              class="img-thumbnail"
+              width="400"
+              height="200"
+              src="assets/images/damir_profil/nogometbmp.bmp"
+          /></a>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/damir_profil/nogomettif.jpg"
+            ><img
+              class="img-thumbnail"
+              width="400"
+              height="200"
+              src="assets/images/damir_profil/nogomettif.jpg"
+          /></a>
+        </div>
+      </div>
       <div class="row mt-4">
         <div class="col">
           <span>
