@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profil - Damir</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <style>
+      video {
+        width: 100%;
+        height: auto;
+      }
+      body {
+        background: #667db6; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #667db6,
+          #0082c8,
+          #0082c8,
+          #667db6
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #667db6,
+          #0082c8,
+          #0082c8,
+          #667db6
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        color: white;
+      }
+      .link {
+        color: white;
+      }
+      .link:hover {
+        color: antiquewhite;
+      }
+
+      li {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Omiljeni sport</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/index.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Košarka
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/index.html#galerija"
+                    >Galerija</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/index.html#pravila"
+                    >Pravila igre</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/index.html#nogomet"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Nogomet
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/index.html#galerijaNogomet"
+                    >Galerija</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/index.html#pravilaNogomet"
+                    >Pravila igre</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="/damir_profil.html"
+                role="button"
+                aria-expanded="false"
+              >
+                Damir Alić
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="/dominik_profil.html"
+                role="button"
+                aria-expanded="false"
+              >
+                Dominik Anđelić
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-md">
+      <div class="row mt-4 text-center">
+        <div class="col">
+          <a target="_blank" href="assets/images/damir_profil/IMG_1730.JPG"
+            ><img
+              class="img-thumbnail"
+              width="300"
+              height="500"
+              src="assets/images/damir_profil/IMG_1730.JPG"
+          /></a>
+          <h3 class="mt-3"><a class="link" href="#podaci">Damir Alić</a></h3>
+        </div>
+        <div class="col">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video
+              class="embed-responsive-item"
+              width="640"
+              height="480"
+              autoplay
+              muted
+              loop
+              controls
+              id="bgvideo"
+            >
+              <source src="/assets/videos/Odbojka.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+          <h3 class="mt-3"><a class="link" href="#pravila">Odbojka</a></h3>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <h3 id="podaci">Moji podaci:</h3>
+        <ul>
+          <li>
+            <strong class="font-weight-bold">Mjesto rođenja: </strong>
+            <a
+              target="_blank"
+              class="link"
+              href="https://www.slavonski-brod.hr/"
+              >Slavonski Brod</a
+            >
+          </li>
+          <li>
+            <strong class="font-weight-bold">Mjesto stanovanja: </strong>
+            <a target="_blank" class="link" href="https://zupanja.hr/"
+              >Županja</a
+            >
+          </li>
+          <li>
+            <strong class="font-weight-bold">Osnovna škola: </strong>
+            <a
+              target="_blank"
+              class="link"
+              href="http://os-ikozarca-zu.skole.hr/"
+              >Osnovna škola Ivana Kozarca Županja</a
+            >
+          </li>
+          <li>
+            <strong class="font-weight-bold">Srednja škola: </strong>
+            <a
+              target="_blank"
+              class="link"
+              href="http://ss-obrtnicko-industrijska-zu.skole.hr/"
+              >Obrtničko-industrijska škola Županja</a
+            >
+          </li>
+          <li>
+            <strong class="font-weight-bold">Fakultet: </strong>
+            <a target="_blank" class="link" href="https://www.ferit.unios.hr"
+              >Fakultet elektrotehnike, računarstva i informacijskih tehnologija
+              Osijek</a
+            >
+          </li>
+        </ul>
+      </div>
+      <h2>Bavim li se ja ovim sportom ili ga samo volim?</h2>
+      <div class="mt-4">
+        <audio controls>
+          <source src="assets/audio/damir_odbojka_audio.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="row mt-4">
+        <h3 id="pravila">Osnovne informacije:</h3>
+        <p>
+          Odbojka je sport s loptom u kojem se dvije suparničke momčadi natječu na terenu s razapetom mrežom na sredini. 
+          Cilj igre je prebaciti loptu preko mreže u protivničko polje na način da je protivnik ne uspije održati u zraku i 
+          vratiti natrag preko mreže na dozvoljen način prije nego što padne na teren.
+        </p>
+      </div>
+      <h2 class="mt-3" id="galerija">Galerija</h2>
+      <div class="row mt-3">
+        <div class="col d-flex justify-content-center align-items-center">
+          <a
+            target="_blank"
+            href="assets/images/damir_profil/odbojkajpg.jpg"
+            ><img
+              class="img-thumbnail"
+              width="400"
+              height="600"
+              src="assets/images/damir_profil/odbojkajpg.jpg"
+          /></a>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/damir_profil/odbojkagif.gif"
+            ><img
+              class="img-thumbnail"
+              width="500"
+              height="600"
+              src="assets/images/damir_profil/odbojkagif.gif"
+          /></a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/damir_profil/odbojkabmp.bmp"
+            ><img
+              class="img-thumbnail"
+              width="400"
+              height="200"
+              src="assets/images/damir_profil/odbojkabmp.bmp"
+          /></a>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/damir_profil/odbojkatiff.jpg"
+            ><img
+              class="img-thumbnail"
+              width="400"
+              height="200"
+              src="assets/images/damir_profil/odbojkatiff.jpg"
+          /></a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          <span>
+            Stranica je izrađena za vrijeme pohađanja Fakulteta elektrotehnike,
+            računarstva i informacijskih tehnologija u Osijeku u sklopu kolegija
+            Multimedijska tehnika.
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <a class="link" target="_blank" href="https://www.ferit.unios.hr"
+          >FERIT</a
+        >
+      </div>
+      <div class="row">
+        <a
+          class="link"
+          target="_blank"
+          href="https://moodle.srce.hr/2022-2023/course/view.php?id=128846"
+          >Multimedijska tehnika</a
+        >
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

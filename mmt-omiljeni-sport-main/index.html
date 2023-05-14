@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Omiljeni sport - košarka</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <style>
+      video {
+        width: 100%;
+        height: auto;
+      }
+      body {
+        background: #667db6; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #667db6,
+          #0082c8,
+          #0082c8,
+          #667db6
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #667db6,
+          #0082c8,
+          #0082c8,
+          #667db6
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        color: white;
+      }
+      .link {
+        color: white;
+      }
+      .link:hover {
+        color: antiquewhite;
+      }
+
+      li {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Omiljeni sport</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/index.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Košarka
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/index.html#galerija"
+                    >Galerija</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/index.html#pravila"
+                    >Pravila igre</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/index.html#nogomet"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Nogomet
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/index.html#galerijaNogomet"
+                    >Galerija</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/index.html#pravilaNogomet"
+                    >Pravila igre</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="/damir_profil.html"
+                role="button"
+                aria-expanded="false"
+              >
+                Damir Alić
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="/dominik_profil.html"
+                role="button"
+                aria-expanded="false"
+              >
+                Dominik Anđelić
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-md">
+      <h1 class="text-center">Omiljeni sport - košarka</h1>
+      <div class="row mt-4 d-flex align-items-center">
+        <div class="col">
+          <a target="_blank" href="assets/images/net-1500x2100.jpg"
+            ><img
+              class="img-thumbnail"
+              width="300"
+              height="500"
+              src="assets/images/net-600x840.jpg"
+          /></a>
+        </div>
+        <div class="col">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video
+              class="embed-responsive-item"
+              width="640"
+              height="480"
+              autoplay
+              muted
+              loop
+              controls
+              id="bgvideo"
+            >
+              <source
+                src="/assets/videos/basketball-court.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3>
+          Košarka je sport u kojem dvije momčadi sastavljene od pet igrača
+          pokušavaju ostvariti što više poena (bodova) ubacivanjem lopte kroz
+          obruč koša pod organiziranim pravilima.
+        </h3>
+      </div>
+      <div class="row mt-4">
+        <h3 id="pravila">Pravila:</h3>
+        <p>
+          Smisao igre je premašiti broj koševa (poena) druge momčadi ubacivanjem
+          lopte kroz obruč protivničkoga koša pod uvjetom da je lopta ušla kroz
+          obruč bez da je prošla kroz donji dio obruča, već od iznad, te
+          sprečavanje protivničke momčadi da ubaci loptu kroz koš momčadi koja
+          se brani. Smiju se napraviti 2 koraka, a treći korak su koraci.
+          Pokušaj ubacivanja lopte kroz obruč (u koš) zove se udarac ili šut.
+          Uspješan šut iz igre vrijedi dva poena ako je šut upućen na način da
+          je zadnje mjesto na kojemu je šuter stajao bilo unutar luka polumjera
+          6.75 (do 2010./11. 6.25) metara u Europi, te 7.24 metara u NBA. Šut
+          izvan toga luka vrijedi tri poena.
+        </p>
+        <span
+          >Evo nekoliko vanjskih stranica koje se bave tematikom košarke:</span
+        >
+        <ul>
+          <li>
+            <a target="_blank" class="link" href="https://www.fiba.basketball/"
+              >FIBA - Međunarodna košarkaška federacija</a
+            >
+          </li>
+          <li>
+            <a target="_blank" class="link" href="https://www.nba.com/"
+              >NBA - Nacionalna košarkaška liga</a
+            >
+          </li>
+          <li>
+            <a target="_blank" class="link" href="https://www.euroleague.net/"
+              >Euroleague Basketball</a
+            >
+          </li>
+          <li>
+            <a target="_blank" class="link" href="https://www.espn.com/nba/"
+              >ESPN - Sportska stranica s informacijama o košarci</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              class="link"
+              href="https://www.wikihow.com/Play-Basketball"
+              >WikiHow - Vodič za učenje košarke</a
+            >
+          </li>
+        </ul>
+      </div>
+      <h2 id="galerija">Galerija</h2>
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/college-1400x2100.jpg"
+            ><img
+              class="img-thumbnail"
+              width="300"
+              height="600"
+              src="assets/images/college-500x750.jpg"
+          /></a>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/dunkin-5461x8192.bmp"
+            ><img
+              class="img-thumbnail"
+              width="300"
+              height="600"
+              src="assets/images/dunkin-500x750.bmp"
+          /></a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/hoop-6000x4000.gif"
+            ><img
+              class="img-thumbnail"
+              width="400"
+              height="200"
+              src="assets/images/hoop-500x333.gif"
+          /></a>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/spartans-4288x2848.png"
+            ><img
+              class="img-thumbnail"
+              width="400"
+              height="200"
+              src="assets/images/spartans-500x332.png"
+          /></a>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <audio controls>
+          <source
+            src="assets/audio/fans-at-basketball-game-crowd-5859.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="row mt-5">
+        <h2 class="text-center">Kreator stranice</h2>
+        <div class="col d-flex flex-column align-items-center">
+          <a
+            target="_blank"
+            href="assets/images/dominik_profil/profil-2000x2667.jpg"
+            ><img
+              class="img-thumbnail"
+              width="300"
+              height="500"
+              src="assets/images/dominik_profil/profil-500x667.jpg"
+          /></a>
+          <div class="mt-3 text-center">
+            <a class="link" href="/dominik_profil.html">Dominik Anđelić</a>
+            <p>Bavim li se ja ovim sportom ili ga samo volim?</p>
+            <div class="mt-4">
+              <audio controls>
+                <source
+                  src="assets/audio/dominik_kosarka.mp3"
+                  type="audio/mp3"
+                />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <p>
+              Dominikov drugi izbor -
+              <a
+                class="link"
+                target="_blank"
+                href="/dominik_profil.html#pravila"
+                >Tenis</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <h1 id="nogomet" class="text-center">Omiljeni sport - nogomet</h1>
+      <div class="row mt-4 text-center">
+        <div class="col">
+          <a target="_blank" href="assets/images/damir_profil/nogomet.jpeg"
+            ><img
+              class="img-thumbnail"
+              width="500"
+              height="700"
+              src="assets/images/damir_profil/nogomet.jpeg"
+          /></a>
+        </div>
+        <div class="col">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video
+              class="embed-responsive-item"
+              width="640"
+              height="480"
+              autoplay
+              muted
+              loop
+              controls
+              id="bgvideo"
+            >
+              <source src="/assets/videos/football.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3>
+          Nogomet je sport u kojemu se dvije momčadi od 11 igrača nadmeću na pravokutnom igralištu travnate površine.
+        </h3>
+      </div>
+      <div class="row mt-4">
+        <h3 id="pravilaNogomet">Pravila:</h3>
+        <p>
+          Cilj igre jest postizanje više pogodaka od protivničke momčadi bilo kojim dijelom tijela osim rukom. 
+          Vratar je jedini igrač kojemu je dozvoljeno igrati i braniti gol rukama, doduše samo unutar jasno označenog 
+          pravokutnika ispred vlastitih vrata. Svim igračima dopušteno je proizvoljno kretanje po terenu, 
+          iako pravilo zaleđa ograničava napadačke kretnje ovisno o položaju lopte i protivničke obrane.
+        </p>
+        <span
+          >Evo nekoliko vanjskih stranica koje se bave tematikom nogometa:</span
+        >
+        <ul>
+          <li>
+            <a target="_blank" class="link" href="https://www.fifa.com"
+              >FIFA -  Upravno tijelo saveza nogometa, nogometa na pijesku i malog nogometa.</a
+            >
+          </li>
+          <li>
+            <a target="_blank" class="link" href="https://www.premierleague.com"
+              >Premier liga</a
+            >
+          </li>
+          <li>
+            <a target="_blank" class="link" href="https://www.skysports.com/"
+              >SkySports - Grupa britanskih sportskih kanala</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              class="link"
+              href="https://www.wikihow.com/Play-Soccer"
+              >WikiHow - Vodič za učenje nogometa</a
+            >
+          </li>
+        </ul>
+      </div>
+      <h2 class="mt-3" id="galerijaNogomet">Galerija</h2>
+      <div class="row mt-3">
+        <div class="col d-flex justify-content-center align-items-center">
+          <a
+            target="_blank"
+            href="assets/images/damir_profil/pexels-pixabay-2209.jpg"
+            ><img
+              class="img-thumbnail"
+              width="400"
+              height="600"
+              src="assets/images/damir_profil/pexels-pixabay-2209.jpg"
+          /></a>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/damir_profil/nogometgif.gif"
+            ><img
+              class="img-thumbnail"
+              width="500"
+              height="600"
+              src="assets/images/damir_profil/nogometgif.gif"
+          /></a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/damir_profil/nogometbmp.bmp"
+            ><img
+              class="img-thumbnail"
+              width="400"
+              height="200"
+              src="assets/images/damir_profil/nogometbmp.bmp"
+          /></a>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <a target="_blank" href="assets/images/damir_profil/nogomettif.jpg"
+            ><img
+              class="img-thumbnail"
+              width="400"
+              height="200"
+              src="assets/images/damir_profil/nogomettif.jpg"
+          /></a>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <audio controls>
+          <source
+            src="assets/audio/nogomet_audio.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="row mt-5">
+        <h2 class="text-center">Kreator stranice</h2>
+        <div class="col d-flex flex-column align-items-center">
+          <a target="_blank" href="assets/images/damir_profil/IMG_1730.JPG"
+            ><img
+              class="img-thumbnail"
+              width="300"
+              height="500"
+              src="assets/images/damir_profil/IMG_1730.JPG"
+          /></a>
+          <div class="mt-3 text-center">
+            <a class="link" href="/damir_profil.html">Damir Alić</a>
+            <p>Bavim li se ja ovim sportom ili ga samo volim?</p>
+            <div class="mt-4">
+              <audio controls>
+                <source
+                  src="assets/audio/damir_nogomet_audio.mp3"
+                  type="audio/mp3"
+                />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <p>
+              Damirov drugi izbor -
+              <a class="link" target="_blank" href="/damir_profil.html#pravila"
+                >Odbojka</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          <span>
+            Stranica je izrađena za vrijeme pohađanja Fakulteta elektrotehnike,
+            računarstva i informacijskih tehnologija u Osijeku u sklopu kolegija
+            Multimedijska tehnika.
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <a class="link" target="_blank" href="https://www.ferit.unios.hr"
+          >FERIT</a
+        >
+      </div>
+      <div class="row">
+        <a
+          class="link"
+          target="_blank"
+          href="https://moodle.srce.hr/2022-2023/course/view.php?id=128846"
+          >Multimedijska tehnika</a
+        >
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
